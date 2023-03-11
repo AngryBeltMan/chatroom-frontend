@@ -1,0 +1,22 @@
+[package]
+name = "chatroom-frontend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+getrandom = { version = "0.2.8", features = ["js"] }
+gloo = "0.8.0"
+gloo-net = { version = "0.2.6", features = ["websocket"] }
+gloo-storage = "0.2.2"
+reqwasm = "0.5.0"
+serde = "1.0.152"
+stylist = { version = "0.12.0", features = ["yew","parser"] }
+wasm-bindgen = "0.2.84"
+wasm-bindgen-futures = "0.4.34"
+wasm-timer = "0.2.5"
+web-sys = { version = "0.3.61", features = ["HtmlInputElement","InputEvent"] }
+yew = { version = "0.20.0", features = ["csr"] }
+yew-hooks = "0.2.0"
+yew-router = "0.17.0"
